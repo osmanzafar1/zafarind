@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Zafar - Testing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">Osman Zafar</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="testing.html" class="nav-link active">Testing</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-content">
+            <h1>Testing Access</h1>
+            <p class="intro-text">
+                Enter your access code to view the protected content.
+            </p>
+            
+            <div class="access-box">
+                <label for="accessCode">Access Code</label>
+                <input 
+                    type="text" 
+                    id="accessCode" 
+                    placeholder="Enter code..."
+                >
+                <p id="error-message" class="error-message"></p>
+                <button onclick="checkAccess()" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Osman Zafar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

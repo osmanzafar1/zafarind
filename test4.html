@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Zafar - Test 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">Osman Zafar</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="testing.html" class="nav-link">Testing</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-content">
+            <div class="carousel-container">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Carousel Slider</h2>
+                
+                <!-- Carousel Wrapper -->
+                <div class="carousel-wrapper">
+                    <!-- Slides Container -->
+                    <div class="carousel-slides" id="carousel-slides">
+                        <div class="carousel-slide" style="background-color: #236A48;">
+                            <h3>Option 1</h3>
+                            <button class="carousel-button" onclick="console.log('Option 1 clicked')">
+                                Select Option 1
+                            </button>
+                        </div>
+                        <div class="carousel-slide" style="background-color: #294E5C;">
+                            <h3>Option 2</h3>
+                            <button class="carousel-button" onclick="console.log('Option 2 clicked')">
+                                Select Option 2
+                            </button>
+                        </div>
+                        <div class="carousel-slide" style="background-color: #C7AB76;">
+                            <h3>Option 3</h3>
+                            <button class="carousel-button" onclick="console.log('Option 3 clicked')">
+                                Select Option 3
+                            </button>
+                        </div>
+                        <div class="carousel-slide" style="background-color: #236A48;">
+                            <h3>Option 4</h3>
+                            <button class="carousel-button" onclick="console.log('Option 4 clicked')">
+                                Select Option 4
+                            </button>
+                        </div>
+                        <div class="carousel-slide" style="background-color: #294E5C;">
+                            <h3>Option 5</h3>
+                            <button class="carousel-button" onclick="console.log('Option 5 clicked')">
+                                Select Option 5
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-nav carousel-prev" onclick="carouselPrev()">‹</button>
+                    <button class="carousel-nav carousel-next" onclick="carouselNext()">›</button>
+                </div>
+                
+                <!-- Dots Navigation -->
+                <div class="carousel-dots" id="carousel-dots"></div>
+                
+                <button onclick="window.location.href='testing.html'" class="back-btn" style="margin-top: 2rem; width: 100%;">
+                    Back to Testing
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Osman Zafar. All rights reserved.</p>
+    </footer>
+
+    <script src="carousel.js"></script>
+</body>
+</html>

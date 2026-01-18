@@ -27,6 +27,9 @@ function checkAccess() {
         window.location.href = 'test3.html';
     } else if (code === 'dan') {
         window.location.href = 'test4.html';
+    } 
+    else if (code === 'dan2') {
+        window.location.href = 'test5.html';
     } else {
         errorMessage.textContent = 'Invalid access code. Please try again.';
         input.classList.add('error');

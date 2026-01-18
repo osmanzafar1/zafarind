@@ -20,16 +20,25 @@
 
     <main class="container">
         <div class="page-content">
-            <h1>Welcome</h1>
-            <p class="intro-text">
-                This is your home page. Use the navigation menu to explore the site.
-            </p>
-            <div class="info-card">
-                <h2>About This Site</h2>
-                <p>
-                    Navigate to the Testing page to access client previews with the provided access codes.
-                    Check out the Portfolio page to see our work.
-                </p>
+            <h1>Contact Me</h1>
+            
+            <div class="contact-box">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="your.email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="Your message..." rows="6"></textarea>
+                </div>
+                
+                <button onclick="sendMessage()" class="submit-btn">Send Message</button>
             </div>
         </div>
     </main>
@@ -37,5 +46,7 @@
     <footer class="footer">
         <p>© 2024 Osman Zafar. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
